@@ -16,5 +16,7 @@ for i in range(5):
     if y == x:
         print('猜對了！')
         break
-    else:
-        print('猜錯了 ~~ ')
+    elif y < x:
+        print("猜錯了 比 %2d 大" % y)
+    elif y > x:
+        print("猜錯了 比 %2d 小" % y)
